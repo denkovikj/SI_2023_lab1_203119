@@ -1,0 +1,234 @@
+1.Креиран е профил 
+2.Променета е главната гранка во master
+3.Креиран е оддалечен репозиториум
+4.
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop
+$ mkdir SI_2023_lab1_203119
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop
+$ cd SI_2023_lab1_203119
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119
+$ git init 
+Initialized empty Git repository in C:/Users/ASUS/Desktop/SI_2023_lab1_203119/.git/
+
+-Со оваа команда се иницијализира Git во директориумот.
+5. git remote add origin https://github.com/denkovikj/SI_2023_lab1_203119.git
+-Со оваа команда оддалечениот репозиториум го поврзуваме со локалниот
+6. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ touch README.md
+
+-Со оваа команда се креира нов фајл README.md
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git add README.md
+
+-Со оваа команда почнуваме да го следиме истио фајл
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git commit -a -m "Initial commit"
+[master (root-commit) 561b339] Initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md.md
+
+-Со оваа команда промените ги додаваме на stage и правиме commit
+
+
+7. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ touch SILab1.java
+
+-Со оваа команда се креира нов фајл 
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git add SILab1.java
+
+-Со оваа команда почнуваме да го следиме истио фајл
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git commit -a -m "Add java class"
+[master 3be51cf] Add java class
+ 1 file changed, 42 insertions(+)
+ create mode 100644 SILab1.java.java
+
+-Со оваа команда промените што ги направивме ги ставаме на stage и потоа правиме commit
+
+8. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git push --all
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 847 bytes | 423.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/denkovikj/SI_2023_lab1_203119.git
+ * [new branch]      master -> master
+
+-Со оваа команда се синхронизираме со оддалечениот репозиториум
+
+9. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git branch bug1
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git branch bug2
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git branch bug3
+
+-Со овие команди се прават 3 гранки кои се разгрануваат од master
+
+10. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+-Со оваа команда се префрлуваме на друга гранка 
+
+11. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug1)
+$ git commit -a -m "Fix wrong loop for reading"
+[bug1 24538ae] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+-Со оваа команда промените што ги направивме ги ставаме на stage и потоа се прави commit
+
+12. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+-Со оваа команда се префрлуваме на друга гранка 
+
+
+13. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug2)
+$ git commit -a -m "Fix wrong condition in filterOddNumbers"
+[bug2 884bc6e] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+-Со оваа команда промените што ги направивме ги ставаме на stage и потоа се прави commit
+
+
+14. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+-Со оваа команда се префрлуваме на друга гранка 
+
+15. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug3)
+$ git commit -a -m "Fix method sumEvenNumbers"
+[bug3 f815d03] Fix method sumEvenNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+-Со оваа команда промените што ги направивме ги ставаме на stage и потоа се прави commit
+
+
+16. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug3)
+$ git push --all
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 827 bytes | 413.00 KiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/denkovikj/SI_2023_lab1_203119.git
+ * [new branch]      bug1 -> bug1
+ * [new branch]      bug2 -> bug2
+ * [new branch]      bug3 -> bug3
+
+-Со оваа гранка ги синхронизираме сите гранки со оддалечениот репозиториум
+
+17. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug3)
+$ git checkout master
+Switched to branch 'master'
+
+-Со оваа команда се префрлуваме на друга гранка 
+
+
+18. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git merge bug1
+Updating 3be51cf..24538ae
+Fast-forward
+ SILab1.java.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+-Со оваа команда гранката bug1 ја спојуваме кон гранката master
+-При спојување на гранката не се случија конфликти
+-Стратегија која што се употреби да се спојат: Fast-forward
+
+
+19. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git push --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/denkovikj/SI_2023_lab1_203119.git
+   3be51cf..24538ae  master -> master
+
+-Со оваа гранка ги синхронизираме сите гранки со оддалечениот репозиториум
+
+
+20. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git merge bug2
+Auto-merging SILab1.java.java
+Merge made by the 'ort' strategy.
+ SILab1.java.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+-Со оваа команда гранката bug2 ја спојуваме кон гранката master
+-При спојување на гранката не се случија конфликти
+-Стратегија која што се употреби да се спојат: ort strategy
+
+
+21. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git push --all
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 365 bytes | 365.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/denkovikj/SI_2023_lab1_203119.git
+   24538ae..8f0443b  master -> master
+
+-Со оваа гранка ги синхронизираме сите гранки со оддалечениот репозиториум
+
+
+22. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+-Со оваа команда се префрлуваме на друга гранка 
+
+
+23. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug3)
+$ git rebase master
+Successfully rebased and updated refs/heads/bug3.
+
+-Со оваа команда правиме rebase на master кон bug3
+
+24. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (bug3)
+$ git checkout master
+Switched to branch 'master'
+
+-Со оваа команда се префрлуваме на друга гранка 
+
+
+25. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git merge bug3
+Updating 8f0443b..cfd68f6
+Fast-forward
+ SILab1.java.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+-Со оваа команда гранката bug3 ја спојуваме кон гранката master
+-При спојување на гранката не се случија конфликти
+-Стратегија која што се употреби да се спојат: Fast-forward
+
+
+26. ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git push origin master
+Everything up-to-date
+
+ASUS@DESKTOP-I3LEL0M MINGW64 ~/Desktop/SI_2023_lab1_203119 (master)
+$ git push --force origin bug3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/denkovikj/SI_2023_lab1_203119.git
+ + 52880fd...857d343 bug3 -> bug3 (forced update)
+

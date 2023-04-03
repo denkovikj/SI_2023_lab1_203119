@@ -1,0 +1,59 @@
+commit 857d3435cffe66c7210b2430265f79579e0f078c (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:24:09 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit cb63e81c4d4b0718fec32f19b5797d01186d65a6
+Merge: 61fad04 951ea9f
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:25:25 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 951ea9ff97b993b6958c45b3a2dde5aeff91e9f6 (origin/bug2, bug2)
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:23:27 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 61fad0474b0954d6d1164e6d5572c95b562fbe98 (origin/bug1, bug1)
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:22:26 2023 +0200
+:...skipping...
+commit 857d3435cffe66c7210b2430265f79579e0f078c (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:24:09 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit cb63e81c4d4b0718fec32f19b5797d01186d65a6
+Merge: 61fad04 951ea9f
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:25:25 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 951ea9ff97b993b6958c45b3a2dde5aeff91e9f6 (origin/bug2, bug2)
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:23:27 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 61fad0474b0954d6d1164e6d5572c95b562fbe98 (origin/bug1, bug1)
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:22:26 2023 +0200
+
+    Fix wrong loop for reading
+
+commit a7f71e30e21ed4b256710e3e6ca8718c9a71762e
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:21:24 2023 +0200
+
+    Add java class
+
+commit 311720794d20287a35c78ce015f079bf2c0fe6b4
+Author: Stefan Denkovikj <stefandenkovik123@gmail.com>
+Date:   Tue Apr 4 01:20:32 2023 +0200
+
+    Initial commit
